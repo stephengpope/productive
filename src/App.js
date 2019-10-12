@@ -4,8 +4,6 @@ import logo from './logo.svg';
 import './App.css';
 
 import Today from './components/Today'
-import Greetings from './components/Greetings'
-import Welcome from './components/Welcome'
 
 import {
   BrowserRouter as Router,
