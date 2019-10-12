@@ -2,7 +2,7 @@ import React, { component } from 'react'
 
 const Today = () => {
 
-    return <div class="Today">
+    return <div className="Today">
         <h1>Today</h1>
 
         <h2>Todo:</h2>

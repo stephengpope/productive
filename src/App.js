@@ -7,16 +7,56 @@ import Today from './components/Today'
 import Greetings from './components/Greetings'
 import Welcome from './components/Welcome'
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 function App() {
   return (
+    
     <div className="App">
-      <div class="NavBar">
-        <a href="/">Today</a> | <a href="/">Focus</a> | <a href="/">Set and Plan Goals</a>
-      </div>
-
-      <Today />
+      <Router>
+        <div className="NavBar">
+        <nav>
+            <ul>
+              <li>
+                <Link to="/">Today</Link>
+              </li>
+              <li>
+                <Link to="/focus">Focus</Link>
+              </li>
+              <li>
+                <Link to="/goals">Goals</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <Switch>
+          <Route path="/goals">
+            <Goals />
+          </Route>
+          <Route path="/focus">
+            <Focus />
+          </Route>
+          <Route path="/">
+            <Today />
+          </Route>
+          </Switch>
+      </Router>
     </div>
+    
   );
+}
+
+function Goals() {
+  return <h2>Goals</h2>;
+}
+
+function Focus() {
+  return <h2>Focus</h2>;
 }
 
 export default App;
