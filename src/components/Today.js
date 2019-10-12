@@ -1,12 +1,12 @@
 import React, { component } from 'react'
+import TodaysGoalList from './TodaysGoalList'
 
 const Today = () => {
 
     return <div className="Today">
         <h1>Today</h1>
 
-        <h2>Todo:</h2>
-        <h2>Completed:</h2>
+        <TodaysGoalList />
     </div>;
 }
 
