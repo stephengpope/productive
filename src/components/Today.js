@@ -1,13 +1,13 @@
-import React, { component } from 'react'
+import React from 'react'
 import TodaysGoalList from './TodaysGoalList'
 
-const Today = () => {
+function Today()  {
 
     return <div className="Today">
         <h1>Today</h1>
-
         <TodaysGoalList />
-    </div>;
+    </div>
+
 }
 
 export default Today;

@@ -38,3 +38,14 @@
   display: inline;
   padding: 0px 5px 0 5px;
 }
+
+.Goal div {
+
+  min-width: 200px;
+  display: inline;
+}
+
+.GoalChildren {
+
+  margin-left: 75px;
+}

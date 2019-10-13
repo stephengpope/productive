@@ -18,9 +18,10 @@ function TodaysGoalList() {
         }
     ];
 
-    const goalList = todaysGoals.map(goal => <Goal goal={goal} />);
+    const goalListTodo = todaysGoals.filter(goal => !goal.completed).map(goal => <Goal goal={goal} />);
+    const goalListDone = todaysGoals.filter(goal => goal.completed).map(goal => <Goal goal={goal} />);
 
-    return <div>{goalList}</div>;
+    return <div><h2>Todo:</h2>{goalListTodo}<h2>Done</h2>{goalListDone}</div>;
 }
 
 export default TodaysGoalList

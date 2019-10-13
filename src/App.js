@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Today from './components/Today'
+import Goals from './components/Goals'
 
 import {
   BrowserRouter as Router,
@@ -49,9 +50,7 @@ function App() {
   );
 }
 
-function Goals() {
-  return <h2>Goals</h2>;
-}
+
 
 function Focus() {
   return <h2>Focus</h2>;

@@ -1,11 +1,12 @@
 import React from 'react'
 
 function Goal({goal}) {
+
     return (
-        <div>
-                <input type="checkbox" />
-                <div>{goal.wish}</div>
-            </div>
+        <div className="Goal">
+           { goal.completed ? <input type="checkbox" checked="checked" /> : <input type="checkbox" /> }
+            <div><input type="text" value={goal.wish} /></div>
+        </div>
     )
 }
 
